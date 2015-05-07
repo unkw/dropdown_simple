@@ -15,7 +15,7 @@ angular.module('app', [])
 
     .controller('AppCtrl', function($scope) {
         $scope.cities = ['San Francisco', 'Moscow', 'Berlin', 'Madrid', 'Rome', 'Amsterdam', 'Paris'];
-        $scope.city = 'San Francisco';
+        $scope.city = '';
     })
 
 ;
