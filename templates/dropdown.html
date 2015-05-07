@@ -3,7 +3,7 @@
     <div class="b-dropdown-list">
         <div class="b-dropdown-item" ng-click="setSelected(item)" ng-repeat="item in list"
              ng-class="{state_active: item && item === selected, state_hover: isHovered($index)}"
-             ng-mousemove="setHoverIndex($index)">
+             ng-mouseenter="setHoverIndex($index)">
             {{ item }}<i></i>
         </div>
     </div>
