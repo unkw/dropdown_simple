@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+.b-dropdown {
+    position: relative;
+    width: 155px;
+    }
+    .b-dropdown-button {
+        position: relative;
+        width: 100%;
+        height: 27px;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+        font-size: 20px;
+        line-height: 24px;
+        color: #333;
+        padding: 1px 28px 1px 8px;
+        cursor: pointer;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        }
+        .b-dropdown-button:active {
+            background-color: #f5f5f5;
+            }
+        .b-dropdown-button:before {
+            content: '';
+            display: block;
+            position: absolute;
+            background: url(../img/dropdown/button-arrow.png) 0 0 no-repeat;
+            top: 50%;
+            right: 8px;
+            margin-top: -3px;
+            width: 11px;
+            height: 6px;
+            }
+
+
+    .b-dropdown-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin-top: 3px;
+        border: 1px solid #aaa;
+        border-radius: 2px;
+        font-size: 0;
+        line-height: 0;
+        }
+        .b-dropdown.state_expanded .b-dropdown-list {
+            display: block;
+            }
+            .b-dropdown-item {
+                position: relative;
+                font-size: 20px;
+                line-height: 24px;
+                height: 30px;
+                padding: 3px 8px;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+                cursor: pointer;
+                }
+                .b-dropdown-item.state_hover {
+                    background: #ffffd9;
+                    }
+                    .b-dropdown-item i {
+                        display: none;
+                        position: absolute;
+                        background: url(../img/dropdown/item-active-arrow.png) 0 0 no-repeat;
+                        top: 50%;
+                        right: 8px;
+                        margin-top: -8px;
+                        width: 18px;
+                        height: 16px;
+                        }
+                        .b-dropdown-item.state_active i {
+                            display: block;
+                            }
